@@ -24,6 +24,6 @@ app.use((req, res) => {
 });
 
 // LISTEN (GANTI PORT SESUAI MAU LU)
-app.listen(80, () => {
+app.listen(443, () => {
   console.log("Express running on port 80");
 });
