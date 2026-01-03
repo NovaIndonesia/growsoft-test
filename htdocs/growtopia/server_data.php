@@ -17,6 +17,5 @@ beta3_type|1
 type2|1
 #maint|Server is under maintenance. We will be back online shortly. Thank you for your patience!
 meta|dedi_355
-error|999|Please Wait Connecting To `2SoulPS`o Private Server
-* Connection #0
-RTENDMARKERBS1001
+error|999|Please Wait Connecting To `2GrowRush`o Private Server
+RTENDMARKERBS1001* shutting down connection #0
