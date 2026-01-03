@@ -1,11 +1,21 @@
 server|5.39.13.24
 port|17153
-type|1
-#maint|Server currently change hosting, please join discord.gg/topps to get the latest host.
 loginurl|5.39.13.24
-beta_server|5.39.13.24
-beta_port|17153
-
+type|1
+beta_server|beta.growtopiagame.com
+beta_loginurl|beta.growtopiagame.com
+beta_port|26999
 beta_type|1
+beta2_server|beta2.growtopiagame.com
+beta2_loginurl|beta2.growtopiagame.com
+beta2_port|26999
+beta2_type|1
+beta3_server|34.202.7.77
+beta3_loginurl|beta3.growtopiagame.com
+beta3_port|26999
+beta3_type|1
+type2|1
+#maint|Connected to server
 meta|dedi_355
+error|999
 RTENDMARKERBS1001
