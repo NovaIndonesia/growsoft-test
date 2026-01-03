@@ -15,7 +15,8 @@ beta3_loginurl|beta3.growtopiagame.com
 beta3_port|26999
 beta3_type|1
 type2|1
-#maint|Connected to server
+#maint|Server is under maintenance. We will be back online shortly. Thank you for your patience!
 meta|dedi_355
-error|999
+error|999|Please Wait Connecting To `2SoulPS`o Private Server
+* Connection #0
 RTENDMARKERBS1001
