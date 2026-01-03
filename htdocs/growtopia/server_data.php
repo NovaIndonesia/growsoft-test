@@ -1,6 +1,6 @@
-server|91.134.85.13
-port|17397
-loginurl|91.134.85.13
+server|5.39.13.24
+port|17091
+loginurl|5.39.13.24
 type|1
 beta_server|beta.growtopiagame.com
 beta_loginurl|beta.growtopiagame.com
