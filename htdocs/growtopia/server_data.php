@@ -1,5 +1,5 @@
 server|5.39.13.24
-port|17153
+port|50003
 loginurl|5.39.13.24
 type|1
 beta_server|beta.growtopiagame.com
@@ -18,4 +18,4 @@ type2|1
 #maint|Server is under maintenance. We will be back online shortly. Thank you for your patience!
 meta|dedi_355
 error|999|Please Wait Connecting To `2GrowRush`o Private Server
-RTENDMARKERBS1001* shutting down connection #0
+RTENDMARKERBS1001
