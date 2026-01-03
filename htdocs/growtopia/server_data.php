@@ -15,7 +15,7 @@ beta3_loginurl|beta3.growtopiagame.com
 beta3_port|26999
 beta3_type|1
 type2|1
-maint|Connected to server
+#maint|Connected to server
 meta|dedi_355
 error|999
 RTENDMARKERBS1001
