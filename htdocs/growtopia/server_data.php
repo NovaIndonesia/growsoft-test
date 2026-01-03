@@ -1,6 +1,6 @@
-server|15.235.166.218
-port|17455
-loginurl|15.235.166.218
+server|91.134.85.13
+port|17397
+loginurl|91.134.85.13
 type|1
 beta_server|beta.growtopiagame.com
 beta_loginurl|beta.growtopiagame.com
@@ -18,4 +18,5 @@ type2|1
 #maint|Connected to server
 meta|dedi_355
 error|999
+Connected to server Test
 RTENDMARKERBS1001
