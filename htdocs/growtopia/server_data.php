@@ -1,5 +1,5 @@
 server|5.39.13.24
-port|17091
+port|17153
 loginurl|5.39.13.24
 type|1
 beta_server|beta.growtopiagame.com
