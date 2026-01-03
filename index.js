@@ -28,7 +28,7 @@ function readServerData() {
   }
 }
 
-// Route untuk server_data.php
+// Route untuk server_data.php HANYA POST
 app.post("/growtopia/server_data.php", (req, res) => {
   const clientIP = req.headers["x-forwarded-for"] || req.connection.remoteAddress;
   console.log(`Request to /growtopia/server_data.php from IP: ${clientIP}`);
@@ -47,8 +47,13 @@ app.post("/growtopia/server_data.php", (req, res) => {
   }
 });
 
-// Route untuk file cache
-app.get("/cache/*", (req, res) => {
+// Route untuk server_data.php GET (diblock atau redirect)
+app.get("/growtopia/server_data.php", (req, res) => {
+  res.status(405).send("Method Not Allowed");
+});
+
+// Route untuk file cache (GET dan POST)
+app.all("/cache/*", (req, res) => {
   const filePath = path.join(__dirname, "htdocs", req.url);
   fs.access(filePath, fs.constants.F_OK, (err) => {
     if (err) {
@@ -59,15 +64,22 @@ app.get("/cache/*", (req, res) => {
   });
 });
 
-// Route untuk file statis lainnya
-app.use(express.static(path.join(__dirname, "htdocs")));
+// Route untuk file statis lainnya (GET dan POST)
+app.use(express.static(path.join(__dirname, "htdocs"), {
+  extensions: ["html", "htm"],
+  setHeaders: (res, path) => {
+    if (path.endsWith(".php")) {
+      res.set("Content-Type", "text/plain");
+    }
+  }
+}));
 
-// Route default
-app.use((req, res) => {
+// Route default (GET dan POST)
+app.all("*", (req, res) => {
   res.status(404).send("Not Found");
 });
 
 // Jalankan server
 app.listen(PORT, () => {
-  console.log(`Server running on port ${PORT}`);
+  console.log(`Server running server port ${PORT}`);
 });
